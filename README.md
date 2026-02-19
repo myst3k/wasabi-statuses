@@ -19,4 +19,4 @@ Deployed automatically to GitHub Pages on push to `main`.
 
 ## Inspired by
 
-[github-statuses](https://mrshu.github.io/github-statuses/) — a project that reconstructs GitHub's platform uptime metrics from archived status feeds. This project takes a simpler approach since Wasabi's StatusPage.io API provides structured data directly.
+[github-statuses](https://github.com/mrshu/github-statuses) ([live site](https://mrshu.github.io/github-statuses/)) — a project that reconstructs GitHub's platform uptime metrics from archived status feeds. This project takes a simpler approach since Wasabi's StatusPage.io API provides structured data directly.
