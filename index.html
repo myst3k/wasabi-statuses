@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wasabi Status Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🟢</text></svg>">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Wasabi Status Dashboard</h1>
+      <p class="subtitle">90-day uptime overview &middot; powered by <a href="https://status.wasabi.com" target="_blank">status.wasabi.com</a></p>
+      <div id="overall-status" class="overall-status loading">Loading...</div>
+    </header>
+
+    <section id="regions-section" class="section">
+      <h2>Storage Regions</h2>
+      <div id="regions-grid" class="components-grid"></div>
+    </section>
+
+    <section id="services-section" class="section">
+      <h2>Services</h2>
+      <div id="services-grid" class="components-grid"></div>
+    </section>
+
+    <section id="incidents-section" class="section">
+      <h2>Recent Incidents</h2>
+      <div id="incidents-list" class="incidents-list">
+        <p class="loading-text">Loading incidents...</p>
+      </div>
+    </section>
+
+    <footer>
+      <p>Data sourced from the <a href="https://status.wasabi.com" target="_blank">Wasabi Technologies StatusPage</a> public API. Updated on each page load.</p>
+    </footer>
+  </div>
+
+  <div id="tooltip" class="tooltip" hidden></div>
+  <script src="app.js"></script>
+</body>
+</html>
